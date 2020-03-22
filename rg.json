@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "rgName": {
-            "type": "string"
+            "type": "testGroup"
         },
         "rgLocation": {
-            "type": "string"
+            "type": "centralus"
         }
     },
     "variables": {},
