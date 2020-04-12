@@ -1,4 +1,4 @@
-﻿ #requires -version 3
+ #requires -version 3
 
 
  $scriptver = "10.0"
@@ -118,46 +118,7 @@
     EXIT
  }
  
- ##########################################################################
- # Verify server is NOT a domain controller
- ##########################################################################
- 
- $result = get-Service ADWS -EA SilentlyContinue
- 
- If($result -ne $null)
- {
-    Clear-Host
-    Write-Host -foregroundcolor YELLOW "`n This server is already configured as a Domain Controller !!!`n`n"
-    "INVALID SERVER: Already configured as a  Domain Controller" | Write-log
-    EXIT
- }
- 
- ##########################################################################
- # Verify only one active NIC
- ##########################################################################
- 
- $nic = get-NetAdapter | Where Status -eq "Up"
-    
- If (($nic.Count -ge 2) -or ($nic -eq $NULL))
- {
-    Clear-Host
-    Write-Host -foregroundcolor YELLOW "`n Only ONE (1) Active Network Adapater Is Allowed on a DC `n`n"
-    "MORE THAN ONE ACTIVE NETWORK ADAPTER" | Write-log
-    EXIT
- }
- 
- $nicName = $nic.Name
- $nicIndex = $nic.InterfaceIndex
- 
- 
- ##########################################################################
- # Determine if this is the FIRST DC or Member server
- ##########################################################################
- 
- $firstDC = "Y"
- 
- If($firstDC -eq "Y")
- {
+
     # -----------------------
     # Get PUBLIC NIC Settings
     # -----------------------
@@ -165,9 +126,9 @@
     Write-Host
     Write-Host "PUBLIC NIC Settings"
  
-    $IPpublicAddress = [string](gwmi win32_networkadapterconfiguration | Where-Object {$_.IPEnabled}).IPAddress
-    $IPpublicMask = [int](Get-NetIPAddress | Where-Object InterfaceAlias -Contains "Ethernet0").PrefixLength
-    $defaultGW =  (gwmi win32_networkadapterconfiguration | Where-Object {$_.IPEnabled}).DefaultIPGateway 
+    $IPpublicAddress = "10.0.0.4"
+    $IPpublicMask = "255.255.255.0"
+    $defaultGW =  "10.0.0.1"
     # TODO: public default gw could be different from $defaultGW
     $IPpublicGateway =  $defaultGW 
  
@@ -181,67 +142,19 @@
  
     Write-Host
     # TODO: add to anwswer file
-    $DOMAIN_NAME = "Lab"
+    $DOMAIN_NAME = "2BDE7ID"
     Write-Host "DOMAIN Settings"
-    $defaultfqdn = $DOMAIN_NAME + ".ARMY.SMIL.MIL"
+    $defaultfqdn = $DOMAIN_NAME + ".ARMY.MIL"
     $fqdn = $defaultfqdn
     "NetBIOS Name: $DOMAIN_NAME" | Write-log
     "FQDN: $fqdn" | Write-log
  
     # --------------------------------
-    # Prompt for Safe Mode Password
+    # Safe Mode Password
     # --------------------------------
+
+    $pwd = "Fh5@#250@!1cgI#"
  
-    # TODO: add to azure key vault
-    $pwd = "P@ssWord123!@#"
- 
-    "Password Provided" | Write-log
- 
-    # -------
-    # Confirm
-    # -------
- 
- 
-    Write-Host "CONFIRM SETTINGS"
- 
-    Write-Host -foregroundcolor YELLOW "`n PUBLIC NIC Settings`n"
-    Write-Host -foregroundcolor WHITE  "`tIP Address : $IPpublicAddress"
-    Write-Host -foregroundcolor WHITE  "`tIP NetMask : $IPpublicMask"
-    Write-Host -foregroundcolor WHITE  "`tIP Gateway : $IPpublicGateway"
- 
-    Write-Host -foregroundcolor YELLOW "`n DOMAIN Settings`n"
-    Write-Host -foregroundcolor WHITE  "`tNetBIOS    : $netname"
-    Write-Host -foregroundcolor WHITE  "`tFQDN       : $fqdn"
-    Write-Host
-    Write-Host
-    
- 
-    # ----------------------------------
-    # Clear current NIC settings, if any
-    # ----------------------------------
-    $clrResults = clear-NICsettings $nicIndex
-    
-    # ----------------------
-    # Apply new NIC settings
-    # ----------------------
-    $pfl = $IPpublicMask
-    
-    If($pfl -eq -1)
-    {
-       Clear-Host
-       Write-Host -foregroundcolor YELLOW "`n Invalid Subnet Mask - $IPpublicMask `n`n"
-       "INVALID SUBNET MASK ($IPpublicMask)" | Write-log
-       EXIT
-    }
-    
-    $nicResult = New-NetIPAddress –InterfaceIndex $nicIndex –IPAddress $IPpublicAddress -PrefixLength $pfl -DefaultGateway $IPpublicGateway
-    $dnsResult = Set-DnsClientServerAddress -InterfaceIndex $nicIndex -ServerAddresses ("127.0.0.1") -Confirm:$false
-    
-    
- 
-    "NIC Configured: $nicname, $IPpublicAddress, $IPpublicGateway, $IPpublicMask" | Write-log
- }
- else
  {
  
    
@@ -281,7 +194,7 @@
     $installResult = Install-WindowsFeature –Name AD-Domain-Services -IncludeManagementTools -WarningAction SilentlyContinue -ErrorAction SilentlyContinue
     If($installResult.ExitCode -ne "Success")
      {
-         Write-Host "Successfully Iinstalled AD"
+         Write-Host "Successfully Installed AD"
      }
  }
  else
@@ -312,5 +225,4 @@
     $installResult = Install-ADDSDomainController $pwd -DomainName "$fqdn" -NoGlobalCatalog:$gc -InstallDns:$dns -ErrorAction SilentlyContinue -WarningAction SilentlyContinue -Confirm:$false -Force
     If($installResult.Status -eq "Success") { displayStatus } else { displayStatus 2 }
  }
-  
  
