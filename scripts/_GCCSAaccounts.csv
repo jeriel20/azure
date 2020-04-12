@@ -1,0 +1,8 @@
+Name,DisplayName,GivenName,Surname,Description,Department,GroupList
+owfadmin, "GCCS 4.3 OWF Administrator", OWF,Admin, "GCCS 4.3 OWF Administrator Account", DEFAULT_GCCS, "JC2CM_ADMIN:JC2CM_COP_MANAGER:GCCS_A_ADMIN:MUSTANG_ADMIN:ADMIN:Domain Users"
+jc2cm_services, "GCCS 4.3 DDS Service", JC2CMSvc, Admin, "GCCS 4.3 DDS Service Account", DEFAULT_GCCS, "Domain Users:DDSSubscriber:DDSPublisher"
+mustang_services, "GCCS 4.3 Mustang Service", MustangSvc, Admin, "GCCS 4.3 Mustang Service Account", DEFAULT_GCCS, "Domain Users:DDSSubscriber:DDSPublisher"
+mcjc2cui, "GCCS 4.3 MCJC2CUI", JC2CUI, Admin, "GCCS 4.3 MCJC2CUI Account", DEFAULT_GCCS, "Domain Users"
+mcjc2cui_services, "GCCS 4.3 MCJC2CUI Service", JC2CUISvc, Admin, "GCCS 4.3 MCJC2CUI Service Account", DEFAULT_GCCS, "Domain Users"
+mustang, "GCCS 4.3 Mustang Service", Mustang, Admin, "GCCS 4.3 Mustang Account", DEFAULT_GCCS, "Domain Users"
+jc2cm, "GCCS 4.3 JC2 User", JC2,User, "GCCS 4.3 JC2 User Account", DEFAULT_GCCS, "Domain Users"

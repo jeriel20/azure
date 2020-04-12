@@ -1,0 +1,504 @@
+dn: CN=assignedUnitCode,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: assignedUnitCode
+adminDescription: Assigned Unit Code.
+attributeID: 1.2.840.113556.1.4.7000.233.28688.28684.8.494616.13192.924874.950046.5 
+attributeSyntax: 2.5.5.12
+isMemberOfPartialAttributeSet: FALSE
+instanceType: 4
+isSingleValued: TRUE
+lDAPDisplayName: assignedUnitCode
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 64
+searchFlags: 0
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+dn: CN=attachedUnitCode,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: attachedUnitCode
+adminDescription: Attached Unit Code.
+attributeID: 1.2.840.113556.1.4.7000.233.28688.28684.8.494616.13192.924874.950046.6 
+attributeSyntax: 2.5.5.12
+isMemberOfPartialAttributeSet: FALSE
+instanceType: 4
+isSingleValued: TRUE
+lDAPDisplayName: attachedUnitCode
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 64
+searchFlags: 0
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+dn: CN=citizenshipStatus,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: citizenshipStatus
+adminDescription: U.S. citizen.
+attributeID: 1.2.840.113556.1.4.7000.233.28688.28684.8.494616.13192.924874.950046.34 
+attributeSyntax: 2.5.5.12
+isMemberOfPartialAttributeSet: TRUE
+instanceType: 4
+isSingleValued: TRUE
+lDAPDisplayName: citizenshipStatus
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 64
+searchFlags: 0
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+dn: CN=countryOfCitizenship,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: countryOfCitizenship
+adminDescription: Contry of citizenship.
+attributeID: 1.3.6.1.5.5.7.9.4 
+attributeSyntax: 2.5.5.12
+isMemberOfPartialAttributeSet: TRUE
+instanceType: 4
+isSingleValued: FALSE
+lDAPDisplayName: countryOfCitizenship
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 64
+searchFlags: 0
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+dn: CN=classificationLevel,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: classificationLevel
+adminDescription: Classification level.
+attributeID: 1.2.840.113556.1.4.7000.233.28688.28684.8.494616.13192.924874.950046.3 
+attributeSyntax: 2.5.5.12
+isMemberOfPartialAttributeSet: TRUE
+instanceType: 4
+isSingleValued: TRUE
+lDAPDisplayName: classificationLevel
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 64
+searchFlags: 0
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+dn: CN=dodAccountType,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: dodAccountType
+adminDescription: Type of account.
+attributeID: 1.2.840.113556.1.4.7000.233.28688.28684.8.494616.13192.924874.950046.40 
+attributeSyntax: 2.5.5.12
+isMemberOfPartialAttributeSet: FALSE
+instanceType: 4
+isSingleValued: TRUE
+lDAPDisplayName: dodAccountType
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 64
+searchFlags: 0
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+dn: CN=dodOrgType,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: dodOrgtType
+adminDescription: Type of Orgnaization.
+attributeID: 1.2.840.113556.1.4.7000.233.28688.28684.8.494616.13192.924874.950046.41 
+attributeSyntax: 2.5.5.12
+isMemberOfPartialAttributeSet: FALSE
+instanceType: 4
+isSingleValued: TRUE
+lDAPDisplayName: dodOrgType
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 64
+searchFlags: 0
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+
+dn: CN=dutyPhoneDSN,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: dutyPhoneDsn
+adminDescription: DSN Duty Phone Number
+attributeID: 1.2.840.113556.1.4.7000.233.28688.28684.8.494616.13192.924874.950046.7 
+attributeSyntax: 2.5.5.12
+isMemberOfPartialAttributeSet: TRUE
+instanceType: 4
+isSingleValued: TRUE
+lDAPDisplayName: dutyPhoneDsn
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 64
+searchFlags: 0
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+dn: CN=extendedSecLevel,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: extendedSecLevel
+adminDescription: Extended security level.
+attributeID: 1.2.840.113556.1.4.7000.233.28688.28684.8.494616.13192.924874.950046.17 
+attributeSyntax: 2.5.5.12
+isMemberOfPartialAttributeSet: TRUE
+instanceType: 4
+isSingleValued: FALSE
+lDAPDisplayName: extendedSecLevel
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 64
+searchFlags: 0
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+dn: CN= federalGloballyUniqueId,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: federalGloballyUniqueId
+adminDescription: Federal Globally Unique Identifier.
+attributeID: 1.2.840.113556.1.4.7000.233.28688.28684.8.494616.13192.924874.950046.38 
+attributeSyntax: 2.5.5.12
+isMemberOfPartialAttributeSet: TRUE
+instanceType: 4
+isSingleValued: TRUE
+lDAPDisplayName: federalGloballyUniqueId
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 64
+searchFlags: 0
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+dn: CN= fieldPhoneNumber,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: fieldPhoneNumber
+adminDescription: Field Phone Number
+attributeID: 1.2.840.113556.1.4.7000.233.28688.28684.8.494616.13192.924874.950046.37
+attributeSyntax: 2.5.5.12
+isMemberOfPartialAttributeSet: FALSE
+instanceType: 4
+isSingleValued: FALSE
+lDAPDisplayName: fieldPhoneNumber
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 64
+searchFlags: 0
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+dn: CN=firstNamePreferred,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: firstNamePreferred
+adminDescription: Preferred first name.
+attributeID: 1.2.840.113556.1.4.7000.233.28688.28684.8.494616.13192.924874.950046.16 
+attributeSyntax: 2.5.5.12
+isMemberOfPartialAttributeSet: TRUE
+instanceType: 4
+isSingleValued: TRUE
+lDAPDisplayName: firstNamePreferred
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 64
+searchFlags: 0
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+dn: CN=iaTrainingDate,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: iaTrainingDate
+adminDescription: Information Assurance training date.
+attributeID: 1.2.840.113556.1.4.7000.233.28688.28684.8.494616.13192.924874.950046.23
+attributeSyntax: 2.5.5.11
+isMemberOfPartialAttributeSet: TRUE
+instanceType: 4
+isSingleValued: TRUE
+lDAPDisplayName: iaTrainingDate
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 24
+searchFlags: 1
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+dn: CN=installation,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: installation
+adminDescription: Installation name.
+attributeID: 1.2.840.113556.1.4.7000.233.28688.28684.8.494616.13192.924874.950046.32 
+attributeSyntax: 2.5.5.12
+isMemberOfPartialAttributeSet: TRUE
+instanceType: 4
+isSingleValued: TRUE
+lDAPDisplayName: installation
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 64
+searchFlags: 1
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+dn: CN=gigId,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: gigId
+adminDescription: Global Information Grid Identification.
+attributeID: 1.2.840.113556.1.4.7000.233.28688.28684.8.494616.13192.924874.950046.11
+attributeSyntax: 2.5.5.12
+isMemberOfPartialAttributeSet: TRUE
+instanceType: 4
+isSingleValued: TRUE
+lDAPDisplayName: gigId
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 64
+searchFlags: 1
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+dn: CN=npeType,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: npeType
+adminDescription: Type of non-person entity.
+attributeID: 1.2.840.113556.1.4.7000.233.28688.28684.8.494616.13192.924874.950046.42 
+attributeSyntax: 2.5.5.12
+isMemberOfPartialAttributeSet: FALSE
+instanceType: 4
+isSingleValued: TRUE
+lDAPDisplayName: npeType
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 64
+searchFlags: 0
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+dn: CN=occupationCode,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: occupationCode
+adminDescription: Occupation code.
+attributeID: 1.2.840.113556.1.4.7000.233.28688.28684.8.494616.13192.924874.950046.12 
+attributeSyntax: 2.5.5.12
+isMemberOfPartialAttributeSet: FALSE
+instanceType: 4
+isSingleValued: FALSE
+lDAPDisplayName: occupationCode
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 64
+searchFlags: 0
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+dn: CN=occupationCodeSecondary,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: occupationCodeSecondary
+adminDescription: Secondary occupation codes.
+attributeID: 1.2.840.113556.1.4.7000.233.28688.28684.8.494616.13192.924874.950046.26 
+attributeSyntax: 2.5.5.12
+isMemberOfPartialAttributeSet: FALSE
+instanceType: 4
+isSingleValued: FALSE
+lDAPDisplayName: occupationCodeSecondary
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 64
+searchFlags: 0
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+dn: CN=officeSymbol,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: officeSymbol
+adminDescription: Office symbol.
+attributeID: 1.2.840.113556.1.4.7000.233.28688.28684.8.494616.13192.924874.950046.8 
+attributeSyntax: 2.5.5.12
+isMemberOfPartialAttributeSet: TRUE
+instanceType: 4
+isSingleValued: TRUE
+lDAPDisplayName: officeSymbol
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 64
+searchFlags: 1
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+dn: CN=payGrade,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: payGrade
+adminDescription: Pay grade.
+attributeID: 1.2.840.113556.1.4.7000.233.28688.28684.8.494616.13192.924874.950046.9 
+attributeSyntax: 2.5.5.12
+isMemberOfPartialAttributeSet: FALSE
+instanceType: 4
+isSingleValued: TRUE
+lDAPDisplayName: payGrade
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 64
+searchFlags: 0
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+dn: CN=payPlan,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: payPlan
+adminDescription: Pay plan code.
+attributeID: 1.2.840.113556.1.4.7000.233.28688.28684.8.494616.13192.924874.950046.10 
+attributeSyntax: 2.5.5.12
+isMemberOfPartialAttributeSet: FALSE
+instanceType: 4
+isSingleValued: TRUE
+lDAPDisplayName: payPlan
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 64
+searchFlags: 0
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+dn: CN=personaType,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: personaType
+adminDescription: DoD persona type.
+attributeID: 1.2.840.113556.1.4.7000.233.28688.28684.8.494616.13192.924874.950046.39 
+attributeSyntax: 2.5.5.12
+isMemberOfPartialAttributeSet: TRUE
+instanceType: 4
+isSingleValued: FALSE
+lDAPDisplayName: personaType
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 64
+searchFlags: 0
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+dn: CN= serviceBranch,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: serviceBranch
+adminDescription: Service branch code.
+attributeID: 1.2.840.113556.1.4.7000.233.28688.28684.8.494616.13192.924874.950046.36
+attributeSyntax: 2.5.5.12
+isMemberOfPartialAttributeSet: TRUE
+instanceType: 4
+isSingleValued: TRUE
+lDAPDisplayName: serviceBranch
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 64
+searchFlags: 1
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+dn: CN=telephoneNumberSecure,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: telephoneNumberSecure
+adminDescription: Secure telephone number.
+attributeID: 1.2.840.113556.1.4.7000.233.28688.28684.8.494616.13192.924874.950046.33
+attributeSyntax: 2.5.5.12
+isMemberOfPartialAttributeSet: TRUE
+instanceType: 4
+isSingleValued: TRUE
+lDAPDisplayName: telephoneNumberSecure
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 64
+searchFlags: 1
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+dn: CN=unitDesignation,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+adminDisplayName: unitDesignation
+adminDescription: Unit short name.
+attributeID: 1.2.840.113556.1.4.7000.233.28688.28684.8.494616.13192.924874.950046.44 
+attributeSyntax: 2.5.5.12
+isMemberOfPartialAttributeSet: FALSE
+instanceType: 4
+isSingleValued: TRUE
+lDAPDisplayName: unitDesignation
+objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: attributeSchema
+oMSyntax: 64
+searchFlags: 0
+showInAdvancedViewOnly: FALSE
+systemOnly: FALSE
+
+# Refresh the cache so the new attributes can be located when the class is added
+dn:
+changetype: modify
+add: schemaUpdateNow
+schemaUpdateNow: 1
+-
+
+dn: CN=dodUserOrgPerson,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: add
+# If the dodUserOrgPerson class already exists then change the changetype to modify
+#changetype: modify
+adminDisplayName: Auxiliary class for DoD specific User object class attributes
+adminDescription: dodUserOrgPerson
+objectCategory: CN=Class-Schema,CN=Schema,CN=Configuration,{_UNIT_DN_}
+objectClass: classSchema
+ldapDisplayName: dodUserOrgPerson
+governsID: 1.2.840.113556.1.5.7000.111.28688.28684.8.57851.1693837.1261017.1879176.3
+instanceType: 4
+objectClassCategory: 3
+subClassOf: Top
+systemOnly: FALSE
+showInAdvancedViewOnly: FALSE
+mayContain: assignedUnitCode
+mayContain: attachedUnitCode
+mayContain: citizenshipStatus
+mayContain: countryOfCitizenship
+mayContain: classificationLevel
+mayContain: dodAccountType
+mayContain: dodOrgType
+mayContain: dutyPhoneDSN
+mayContain: extendedSecLevel
+mayContain: federalGloballyUniqueId
+mayContain: fieldPhoneNumber
+mayContain: firstNamePreferred
+mayContain: gigId
+mayContain: iaTrainingDate
+mayContain: installation
+mayContain: npeType
+mayContain: occupationCode
+mayContain: occupationCodeSecondary
+mayContain: officeSymbol
+mayContain: payGrade
+mayContain: payPlan
+mayContain: personaType
+mayContain: serviceBranch
+mayContain: telephoneNumberSecure
+mayContain: unitDesignation
+
+dn:
+changetype: modify
+add: schemaUpdateNow
+schemaUpdateNow: 1
+-
+
+dn: CN=User,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: Modify
+add: auxiliaryClass
+auxiliaryClass: dodUserOrgPerson
+-
+
+dn:
+changetype: modify
+add: schemaUpdateNow
+schemaUpdateNow: 1
+-
+
+# Next step is to load dodUserOrgPerson object and add the existing buildingName attribute
+dn: CN=dodUserOrgPerson,CN=Schema,CN=Configuration,{_UNIT_DN_}
+changetype: modify
+add: mayContain
+mayContain: buildingName
+-
+
+dn:
+changetype: modify
+replace: schemaupdatenow
+schemaupdatenow: 1
+-

@@ -1,0 +1,4 @@
+Name,DisplayName,GivenName,Surname,Description,Department,GroupList
+CWEB_DDS, "Command Web DDS Service Account", CWEB, DDS, "Command Web DDS Service Account","DEFAULT_CWEB_DDS","DDSPublisher:DDSSubscriber"
+EMS_DDS, "EMS DDS Service Account", EMS, DDS, "EMS DDS Service Account","DEFAULT_EMS_DDS","DDSPublisher:DDSSubscriber"
+OHS_DDS, "OHS DDS Service Account", OHS, DDS, "OHS DDS Service Account","DEFAULT_OHS_DDS","DDSPublisher:DDSSubscriber"

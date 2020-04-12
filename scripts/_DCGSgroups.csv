@@ -1,0 +1,10 @@
+GroupName,GroupScope,DisplayName,Description
+"DCGS-A {SITENAME} Admins", "Global", "DCGS-A {SITENAME} Admin", "DCGS-A {SITENAME} Admins Group"
+"DCGS-A {SITENAME} DBAs", "Global", "DCGS-A {SITENAME} DBAs", "DCGS-A {SITENAME} DBAs Group"
+"DCGS-A {SITENAME} GIS Admins", "Global", "DCGS-A {SITENAME} GIS Admin", "DCGS-A {SITENAME} GIS Admins Group"
+"DCGS-A {SITENAME} GIS Analysts", "Global", "DCGS-A {SITENAME} GIS Analysts", "DCGS-A {SITENAME} GIS Analysts Group"
+"DCGS-A {SITENAME} Security", "Global", "DCGS-A {SITENAME} Security", "DCGS-A {SITENAME} Security Group"
+"DCGS-A {SITENAME} Service Users", "Global", "DCGS-A {SITENAME} Service Users", "DCGS-A {SITENAME} Service Users Group"
+"DCGS-A {SITENAME} Users", "Global", "DCGS-A {SITENAME} Users", "DCGS-A {SITENAME} Users Group"
+"DCGS-A {SITENAME} Weather Operators", "Global", "DCGS-A {SITENAME} Weather Operators", "DCGS-A {SITENAME} Weather Operators Group"
+"DCGS-A {SITENAME} Weather Rule Managers", "Global", "DCGS-A {SITENAME} Weather Rule Managers", "DCGS-A {SITENAME} Weather Rule Managers Group"

@@ -1,0 +1,6 @@
+GroupName,GroupScope,DisplayName,Description
+"ADMIN", "Global", "ADMIN", "ADMIN Group"
+"JC2CM_ADMIN", "Global", "JC2CM_ADMIN", "JC2CM Admins Group"
+"JC2CM_COP_MANAGER", "Global", "JC2CM_COP_MANAGER", "JC2CM COP Admins Group"
+"GCCS_A_ADMIN", "Global", "GCCS_A_ADMIN", "GCCS-A 4.3 Admins Group"
+"MUSTANG_ADMIN", "Global", "MUSTANG_ADMIN", "Mustang Admins Group"

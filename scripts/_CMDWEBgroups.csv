@@ -1,0 +1,8 @@
+GroupName,GroupScope,DisplayName,Description
+"{SITENAME}_commandweb_user", "Global", "{SITENAME} Command Web Users", "{SITENAME} Command Web Users Group"
+"{SITENAME}_commandweb_admin", "Global", "{SITENAME} Command Web Administrators", "{SITENAME} Command Web Administrators Group"
+"OHS_WRITE", "Global", "OHS WRITE", "OHS Write Security Group"
+"EMS_WRITE", "Global", "EMS WRITE", "EMS Write Security Group"
+"CIRS_WRITE", "Global", "CIRS WRITE", "CIRS Write Security Group"
+"OHS_ADMIN", "Global", "OHS_ADMIN", "OHS Admin Security Group"
+"EMS_ADMIN", "Global", "OHS_ADMIN", "EMS Admin Security Group"
