@@ -1,3 +1,4 @@
+#requires -version 3
 ##########################################################################
 # Script Name   :  ADinstall-2012-new.ps1
 # Version       :  10.0

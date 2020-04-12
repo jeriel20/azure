@@ -215,7 +215,7 @@ Write-Host
 ##########################################################################
 
 show-PasswordWarning
-$securepwd = get-Password "Default Password for C2I Security Groups" "CYAN" 
+$securepwd = convertto-securestring "Fh5@#250@!1cgI#" -AsPlainText -Force
 $pwd = ConvertTo-PlainText($securepwd) 
 
 "Retrieved Default Password for C2I Security Groups" | Write-log
@@ -322,7 +322,7 @@ $groups += get-ADgroup -filter {GroupScope -eq "DomainLocal"} | Select-Object Na
 displayLine
 Write-Host
 
-$detailed = get-Response "View Detailed Report (Y/N)?" "CYAN" "N"
+$detailed = "N"
 
 if($detailed -eq "Y")
 {

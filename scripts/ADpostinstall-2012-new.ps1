@@ -1,6 +1,6 @@
 #requires -version 3
 ##########################################################################
-# Script Name   :  ADpostinstall-2012-new.ps1
+# Script Name   :  ADpostinstall-2012.ps1
 # Version       :  10.0
 # Creation Date :  12-APR-2020
 # Prerequisites :  Windows 2012, PowerShell 3.0, .NET 4.5

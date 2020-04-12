@@ -236,16 +236,15 @@ displayLine
 ##########################################################################
 
 show-PasswordWarning
-$securepwd = get-Password "Default Password for Service Accounts" "CYAN" 
+$securepwd = convertto-securestring "Fh5@#250@!1cgI#" -AsPlainText -Force
 $pwd = ConvertTo-PlainText($securepwd) 
-
 "Retrieved Default Password for Service Accounts" | Write-log
 
 ##########################################################################
 # Create Service Accounts OU
 ##########################################################################
 
-$OUname = get-Response "Service Accounts OU Name" "CYAN" "$defaultOU"
+$OUname = $defaultOU
 
 "OU NAME: $OUname" | Write-log
 
@@ -481,7 +480,7 @@ else
 displayLine
 Write-Host
 
-$detailed = get-Response " View Detailed Report (Y/N)?" "CYAN" "N"
+$detailed = "N"
 
 if($detailed -eq "Y")
 {

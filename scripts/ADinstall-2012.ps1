@@ -1,4 +1,4 @@
- #requires -version 3
+﻿ #requires -version 3
 
 
  $scriptver = "10.0"
@@ -225,4 +225,5 @@
     $installResult = Install-ADDSDomainController $pwd -DomainName "$fqdn" -NoGlobalCatalog:$gc -InstallDns:$dns -ErrorAction SilentlyContinue -WarningAction SilentlyContinue -Confirm:$false -Force
     If($installResult.Status -eq "Success") { displayStatus } else { displayStatus 2 }
  }
+  
  
