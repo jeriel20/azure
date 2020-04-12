@@ -262,7 +262,7 @@ If($firstDC -eq "Y")
    Write-Host
    displaySubHeader "DOMAIN Settings"
    $netname = get-Response "Enter the NetBIOS (Short) domain name (ie. 25ID)"
-   $defaultfqdn = $netname + ".ARMY.SMIL.MIL"
+   $defaultfqdn = $netname + ".ARMY.MIL"
    $fqdn = get-Response "Enter the Fully Qualified Domain Name" "CYAN" "$defaultfqdn"
    "NetBIOS Name: $netname" | Write-log
    "FQDN: $fqdn" | Write-log
