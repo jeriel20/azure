@@ -15,6 +15,10 @@
 # A value of 6 specifies Windows Server 2012R2
 # A value of 7 specifies Windows Server 2016
 ##########################################################################
+$runlocation = "c:\scripts"
+mkdir $runlocation
+cd $runlocation
+
 $level = "6"
 Write-Host "Setting Domain Information"
 $netname = "3SBCT2ID"
