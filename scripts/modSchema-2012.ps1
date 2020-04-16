@@ -204,7 +204,7 @@ Write-Host -foregroundcolor WHITE $prereqs
 displayLine "="
 Write-Host
 
-$go = get-Response "Do You Wish to Continue (Y/N)?" "CYAN" "Y"
+$go = "Y"
 
 If($go -ne "Y") 
 { 

@@ -29,5 +29,5 @@ Install-WindowsFeature –Name AD-Domain-Services -IncludeManagementTools -Warni
 Import-Module ADDSDeployment
 sleep 5
 Write-Host "Installing AD Forest & DNS"
-Install-ADDSForest -SafeModeAdministratorPassword $securePWD -DomainMode "$level" -DomainName "$fqdn" -DomainNetbiosName "$netname" -ForestMode "$level" -InstallDns -ErrorAction SilentlyContinue -WarningAction SilentlyContinue -Force
+Install-ADDSForest -SafeModeAdministratorPassword $securePWD -DomainMode "$level" -DomainName "$fqdn" -DomainNetbiosName "$netname" -ForestMode "$level" -InstallDns -ErrorAction SilentlyContinue -WarningAction SilentlyContinue -NoRebootOnCompletion -Force
 Write-Host "Script Complete"

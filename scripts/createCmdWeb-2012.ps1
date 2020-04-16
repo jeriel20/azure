@@ -241,8 +241,6 @@ $pwd = ConvertTo-PlainText($securepwd)
 # Site OU
 ##########################################################################
 
-$SITEID = get-Response "Parent Organizational Unit (OU)" "CYAN" "$SITEID"
-#$SITEID = $SITEID.Replace(" ","")
 $SITEID = $SITEID.ToUpper()
 
 "SITE ID : $SITEID"      | Write-log
@@ -543,7 +541,7 @@ else
 displayLine
 Write-Host
 
-$detailed = get-Response "View Detailed Report (Y/N)?" "CYAN" "N"
+$detailed = "N"
 
 if($detailed -eq "Y")
 {

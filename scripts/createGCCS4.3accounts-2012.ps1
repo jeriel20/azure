@@ -478,7 +478,7 @@ else
 displayLine
 Write-Host
 
-$detailed = get-Response " View Detailed Report (Y/N)?" "CYAN" "N"
+$detailed = "N"
 
 if($detailed -eq "Y")
 {

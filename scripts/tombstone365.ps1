@@ -49,7 +49,7 @@ Write-Host -foregroundcolor YELLOW " MUST BE RUN ON A DOMAIN CONTROLLER !!!`n"
 
 displayLine
 
-$go = get-Response "Do You Wish to Continue (Y/N)?" "CYAN" "Y"
+$go = "Y"
 
 If($go -ne "Y") 
 { 

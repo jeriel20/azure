@@ -167,13 +167,7 @@ if(test-path "c:\scripts\firstDC.txt")
 
 . .\"createAccounts-2012.ps1"
 
-. .\"createDCGSaccounts-2012.ps1"
-
-. .\"createCMDWEB-2012.ps1"
-
 . .\"createC2Iaccounts-2012.ps1"
-
-. .\"createGCCS4.3accounts-2012.ps1"
 
 ##########################################################################
 # Installation Complete: Copy shortcuts to desktop
